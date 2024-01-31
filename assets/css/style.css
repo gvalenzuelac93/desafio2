@@ -28,6 +28,7 @@ body{
     background-size: cover;
     background-position: bottom;
     border: 2px solid black;
+    color: white;
     
 }
 .footer {
@@ -58,14 +59,14 @@ body{
     gap: 10px;
 }
 .categorias a {
-    color: black;
+    color: rgb(199, 193, 193);
     text-decoration: none;
     cursor:pointer;
     font-size: 15px;
 }
 .categorias span{
     font-size: 13px;
-    color: rgb(211, 206, 206);
+    color: rgb(43, 41, 41);
 }
 .categorias a:hover{
     opacity: 0.6;
