@@ -10,6 +10,7 @@ body{
     background-size: cover;
     border-bottom: 2px solid black;
     color: aliceblue;
+    height: 10%;
 }
 .header img{
     width: 7%;
