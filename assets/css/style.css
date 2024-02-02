@@ -12,7 +12,8 @@ body{
     color: aliceblue;
 }
 .header img{
-    width: 10%;
+    width: 7%;
+    padding: 5px;
 }
 .main {
     grid-area: main;
@@ -39,10 +40,11 @@ body{
 .grid-container {
     display: grid;
     grid-template-areas:
-    "header header header header header header"
-    "sidebar sidebar main main main main "
-    "sidebar sidebar footer footer footer footer"
+    "header header header"
+    "sidebar main main "
+    "footer footer footer"
     ;
+    height: 100vh;
 }
 .box {
     align-items: center;
@@ -74,11 +76,13 @@ body{
 }
 .galeria{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 15px;
     padding-bottom: 15px;
+    width: fit-content;
 
 }
 .productos {
@@ -88,9 +92,15 @@ body{
     align-items: center;
     background-color: #e5d4ba;
     padding-top: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    border-radius: 5%;
+    border: 10px solid black;
+    
 }
 .productos img {
-    width: 35%;
+    width: 70%;
     
 }
 .productos h2 {
@@ -109,9 +119,9 @@ body{
     width: 100%;
     height: 10%;
     padding-top: 10px;
-    padding-bottom: 10px;
     align-content: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 .comprar a {
     color: white;
